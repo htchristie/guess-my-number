@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+  min-height: 35vh;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  max-height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left,
+.right,
+.restart {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.right {
+  font-size: 1.25rem;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.number {
+  background: #eee;
+  color: #333;
+  font-size: 3.5rem;
+  padding: 1.875rem 2.5rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.range {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.guess {
+  display: block;
+  width: 15.625rem;
+  background: none;
+  font-family: inherit;
+  font-size: 3.125rem;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 1.875rem;
+  padding: 0.9375rem;
+  border: 4px solid #eee;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 1.25rem;
+  font-family: inherit;
+  padding: 1.25rem 1.875rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 5rem;
+  height: 1.875rem;
+}
+
+.label-score {
+  margin-bottom: 1.25rem;
+}
+
+.hide {
+  display: none;
+}
